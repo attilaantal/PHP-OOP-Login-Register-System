@@ -50,7 +50,7 @@ if (Input::exists()) {
                 Session::flash('home', 'Welcome ' . Input::get('username') . '! Your account has been registered. You may now log in.');
                 Redirect::to('index.php');
             } catch(Exception $e) {
-                echo $error, '<br>';
+                echo $e->getTraceAsString(), '<br>';
             }
         } else {
             foreach ($validate->errors() as $error) {
