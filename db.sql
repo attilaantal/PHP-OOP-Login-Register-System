@@ -19,8 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `db`
 --
-CREATE DATABASE IF NOT EXISTS `lr` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `lr`;
+CREATE DATABASE IF NOT EXISTS `php_oop` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `php_oop`;
 
 -- --------------------------------------------------------
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `joined` datetime NOT NULL,
   `group` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
