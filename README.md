@@ -9,8 +9,8 @@ This example is educational only and should be treated as such. You can find the
 There are 3 steps to get this example running.
 
 1. Upload the files to your web server
-2. Upload the **db.sql** to your mysql server or run the contents in a SQL query.
-3. Edit the database connection details in the **core/init.php** file.
+2. Import the **db.sql** into you MySQL database server or run the contents in a SQL query.
+3. Adjust the database connection in the **core/init.php** file.
 
 That's it! You can now navigate to address where the files are hosted and run the **index.php**.
 
