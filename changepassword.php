@@ -32,13 +32,11 @@ if(Input::exists()) {
     }
 
     if($validate->passed()) {
-        if(Hash::make(Input::get('current_password'), $user->data()->salt) !== $user->data()->password) {
+        if(!Hash::isValidPassword(Input::get('current_password'), $user->data()->password)){
             echo 'Your current password is wrong.';
         } else {
-            $salt = Hash::salt(32);
             $user->update(array(
-                'password' => Hash::make(Input::get('new_password'), $salt),
-                'salt' => $salt
+                'password' => Hash::encryptPassword(Input::get('new_password'))
             ));
 
             Session::flash('home', 'Your password has been changed!');
