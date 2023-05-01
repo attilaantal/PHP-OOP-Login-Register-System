@@ -11,7 +11,7 @@ $GLOBALS['config'] = array(
         'username' => 'root',
         'password' => '',
         'db' => 'php_oop',
-        'charset' => 'latin1'
+        'charset' => 'utf8mb4'
     ),
     'remember' => array(
         'cookie_name' => 'hash',
